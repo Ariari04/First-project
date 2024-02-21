@@ -19,9 +19,10 @@ public class Calculator extends AppCompatActivity {
     public void clearNumbers(View view){
         EditText editText1 = findViewById(R.id.editTextNumberDecimal);
         EditText editText2 = findViewById(R.id.editTextNumberDecimal2);
+        TextView textView = findViewById(R.id.result);
+        textView.setText("0");
         editText2.setText("");
         editText1.setText("");
-
 
     }
     public void addNumbers(View view) {
@@ -30,7 +31,12 @@ public class Calculator extends AppCompatActivity {
         EditText editText2 = findViewById(R.id.editTextNumberDecimal2);
         String value1 = editText1.getText().toString();
         String value2 = editText2.getText().toString();
-
+        if (value2.equals("")){
+            return;
+        }
+        if (value1.equals("")){
+            return;
+        }
         // Преобразовать значения в числа
         double number1 = Double.parseDouble(value1);
         double number2 = Double.parseDouble(value2);
@@ -55,7 +61,12 @@ public class Calculator extends AppCompatActivity {
         EditText editText2 = findViewById(R.id.editTextNumberDecimal2);
         String value1 = editText1.getText().toString();
         String value2 = editText2.getText().toString();
-
+        if (value2.equals("")){
+            return;
+        }
+        if (value1.equals("")){
+            return;
+        }
         // Преобразовать значения в числа
         double number1 = Double.parseDouble(value1);
         double number2 = Double.parseDouble(value2);
@@ -80,6 +91,12 @@ public class Calculator extends AppCompatActivity {
         EditText editText2 = findViewById(R.id.editTextNumberDecimal2);
         String value1 = editText1.getText().toString();
         String value2 = editText2.getText().toString();
+        if (value2.equals("")){
+            return;
+        }
+        if (value1.equals("")){
+            return;
+        }
 
         // Преобразовать значения в числа
         double number1 = Double.parseDouble(value1);
@@ -106,6 +123,12 @@ public class Calculator extends AppCompatActivity {
         EditText editText2 = findViewById(R.id.editTextNumberDecimal2);
         String value1 = editText1.getText().toString();
         String value2 = editText2.getText().toString();
+        if (value2.equals("")){
+            return;
+        }
+        if (value1.equals("")){
+            return;
+        }
 
         // Преобразовать значения в числа
         double number1 = Double.parseDouble(value1);
@@ -132,6 +155,12 @@ public class Calculator extends AppCompatActivity {
         EditText editText2 = findViewById(R.id.editTextNumberDecimal2);
         String value1 = editText1.getText().toString();
         String value2 = editText2.getText().toString();
+        if (value2.equals("")){
+            return;
+        }
+        if (value1.equals("")){
+            return;
+        }
 
         // Преобразовать значения в числа
         double number1 = Double.parseDouble(value1);
