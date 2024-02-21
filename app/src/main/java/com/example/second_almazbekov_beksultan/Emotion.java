@@ -25,6 +25,7 @@ public class Emotion extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         binding = ActivityEmotionBinding.inflate(getLayoutInflater());
 
         setContentView(binding.getRoot());
@@ -163,15 +164,15 @@ public class Emotion extends AppCompatActivity {
         binding.textView3.setText("Ход - X");
         binding.textView2.setText("Никто!");
         totalSelection = 0;
-        binding.image1.setImageResource(R.drawable.border);
-        binding.image2.setImageResource(R.drawable.border);
-        binding.image3.setImageResource(R.drawable.border);
-        binding.image4.setImageResource(R.drawable.border);
-        binding.image5.setImageResource(R.drawable.border);
-        binding.image6.setImageResource(R.drawable.border);
-        binding.image7.setImageResource(R.drawable.border);
-        binding.image8.setImageResource(R.drawable.border);
-        binding.image9.setImageResource(R.drawable.border);
+        binding.image1.setImageDrawable(null);
+        binding.image2.setImageDrawable(null);
+        binding.image3.setImageDrawable(null);
+        binding.image4.setImageDrawable(null);
+        binding.image5.setImageDrawable(null);
+        binding.image6.setImageDrawable(null);
+        binding.image7.setImageDrawable(null);
+        binding.image8.setImageDrawable(null);
+        binding.image9.setImageDrawable(null);
 
     }
 
