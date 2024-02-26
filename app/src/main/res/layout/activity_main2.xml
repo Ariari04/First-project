@@ -39,4 +39,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2" />
 
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="153dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="160dp"
+        android:onClick="openMessageSenderActivity"
+        android:text="Send Message"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

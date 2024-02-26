@@ -19,6 +19,10 @@ public class MainActivity2 extends AppCompatActivity {
         Intent intent = new Intent(this, Calculator.class);
         startActivity(intent);
     }
+    public void openMessageSenderActivity(View view) {
+        Intent intent = new Intent(this, Send_message.class);
+        startActivity(intent);
+    }
     public void openEmotionActivity(View view) {
         Intent intent = new Intent(this, Emotion.class);
         startActivity(intent);
